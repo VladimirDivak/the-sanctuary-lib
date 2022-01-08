@@ -1,11 +1,13 @@
-﻿namespace TheSanctuary
+using System;
+
+namespace TheSanctuary
 {
-    [System.Serializable]
+    [Serializable]
     public struct Outlook
     {
-        public string BaseColor { get; set; }
-        public string LinesColor { get; set; }
-        public string PatternName { get; set; }
-        public bool UsePattern { get; set; }
+        public string nicknameColor { get; set; }
+        public string ballMainColor { get; set; }
+        public string ballSecondColor { get; set; }
+        public string ballPatternName { get; set; }
     }
 }
