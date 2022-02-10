@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
+using TheSanctuary.Network;
+
 namespace TheSanctuary
 {
     [Serializable]
@@ -9,9 +11,10 @@ namespace TheSanctuary
     {
         public string username { get; set; }
         public Outlook outlookData {get; set; }
-
         public float avgAccuracy { get; set; }
-        public List<float> throwAccuracyData { get; set; }
-        public ulong winsValue {get; set; }
+        public int level { get; set; }
+        public int levelScores { get; set; }
+
+        public List<NetworkGame> multiplayerGamesData { get; set; } = new List<NetworkGame>();
     }
 }

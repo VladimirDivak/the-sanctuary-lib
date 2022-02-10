@@ -1,6 +1,9 @@
-namespace TheSanctuary
+using System;
+
+namespace TheSanctuary.Network
 {
-    public struct PlayerTransform
+    [Serializable]
+    public struct NetworkTransform
     {
         public float positionX { get; set; }
         public float positionY { get; set; }
