@@ -9,8 +9,14 @@ namespace TheSanctuary.Interfaces
 
         bool isMultiplayer { get; set; }
         int scoreMultiplier { get; set; }
-        bool blockBallGrabbing { get; set; }
-        bool destroyBallAfter { get; set; }
+        bool useBlockBallGrabbing { get; set; }
+        bool UseDestroyBallAfterThrow { get; set; }
+
+        float timeToStartThrowing { get; set; }
+        float timeToReleaseThrowing { get; set; }
+
+        float currentGameTime { get; set; }
+        int currentGameScores { get; set; }
 
         string GetGameDiscription();
 

@@ -2,8 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-using TheSanctuary.Network;
-
 namespace TheSanctuary
 {
     [Serializable]
